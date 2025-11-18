@@ -1,13 +1,13 @@
-public class pnj implements IExempleinterfacePnj {
+public class pnj implements isPnj {
 
     private int pv;
     private int id;
-    private String Tag;
+    private String tag;
 
     public pnj(int pv, int id, String Tag) {
         this.pv = pv;
         this.id = id;
-        this.Tag = Tag;
+        this.tag = tag;
     }
 
 
@@ -18,26 +18,31 @@ public class pnj implements IExempleinterfacePnj {
 
     @Override
     public void setId(int id) {
-
+        this.id = id;
     }
 
     @Override
     public String getTag() {
-        return "";
+        return this.tag;
     }
 
     @Override
     public void setTag(String tag) {
-
+        this.tag = tag;
     }
 
     @Override
     public int getPv() {
-        return 0;
+        return this.pv;
     }
 
     @Override
     public void setPv(int pv) {
+        this.pv = pv;
+    }
 
+    @Override
+    public void recevoirDegats(int amount) {
+        setPv(getPv() - amount);
     }
 }

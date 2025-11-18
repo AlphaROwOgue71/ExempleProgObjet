@@ -1,4 +1,4 @@
-public interface IExempleInterfaceCombattant extends IExempleinterfacePnj {
+public interface isCombattant extends isPnj {
 
     public void attaquer(pnj cible);
 
@@ -6,7 +6,7 @@ public interface IExempleInterfaceCombattant extends IExempleinterfacePnj {
 
     public void setPuissance(int puissance);
 
-    public static void tuer(pnj cible) {
+    public default void tuer(pnj cible) {
         cible.setPv(0);
     }
 }
