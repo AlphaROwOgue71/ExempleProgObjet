@@ -16,13 +16,3 @@ public interface isPnj {
 
 
 }
-
-// ? commentaire bleu
-
-// * commentaire vert
-
-// ! commentaire rouge
-
-// TODO commentaire orange
-
-// commentaire gris
